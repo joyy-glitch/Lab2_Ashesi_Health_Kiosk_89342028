@@ -15,7 +15,7 @@ public class HealthKiosk {
             case 'L': serviceDesk = "Lab Desk"; break;
             case 'T': serviceDesk = "Triage Desk"; break;
             case 'C': serviceDesk = "Counselling Desk"; break;
-            default: System.out.println("Invalid service code"); break;
+            default: serviceDesk = "None";System.out.println("Invalid service code"); break;
         }
         System.out.println("Go to:" + serviceDesk);
 
@@ -28,6 +28,7 @@ public class HealthKiosk {
         String bmiCategory;
         final double pharmacyDosage = 250;
         int tablets = 0;
+        double roundedBmi = 0;
 
         if (healthMetric == 1) {
             System.out.println("Enter your weight in kg:");
