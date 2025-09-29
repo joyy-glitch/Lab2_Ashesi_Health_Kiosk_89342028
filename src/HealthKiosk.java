@@ -9,7 +9,7 @@ public class HealthKiosk {
         // Task 1
         System.out.println("Enter service code (P/L/T/C):");
         char serviceCode = input.nextLine().toUpperCase().charAt(0);
-        String serviceDesk = "";
+        String serviceDesk;
         switch (serviceCode) {
             case 'P': serviceDesk = "Pharmacy Desk"; break;
             case 'L': serviceDesk = "Lab Desk"; break;
@@ -28,7 +28,7 @@ public class HealthKiosk {
         String bmiCategory;
         final double pharmacyDosage = 250;
         int tablets = 0;
-        double roundedBmi = 0;
+        double roundedBmi;
 
         if (healthMetric == 1) {
             System.out.println("Enter your weight in kg:");
