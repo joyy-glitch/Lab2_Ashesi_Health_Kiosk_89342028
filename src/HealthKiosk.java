@@ -36,7 +36,7 @@ public class HealthKiosk {
             System.out.println("Enter your height in meters:");
             double height = input.nextDouble();
             bmi = weight/(Math.pow(height,2));
-            double roundedBmi = Math.round(bmi * 10) / 10.0;
+            roundedBmi = Math.round(bmi * 10) / 10.0;
             if (bmi < 18.5){
                 bmiCategory = "Underweight";}
             else if((bmi >= 18.5) && (bmi <= 24.9)){
