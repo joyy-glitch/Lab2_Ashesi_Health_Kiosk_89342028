@@ -43,9 +43,9 @@ public class HealthKiosk {
             else if((bmi >= 25) && (bmi <= 29.9)){
                 bmiCategory = "Overweight";}
             else {
-                bmiCategory = "Obese";
-            System.out.println("BMI: " + roundedBmi + "Category" + bmiCategory);
-                    }
+                bmiCategory = "Obese";}
+            System.out.println("BMI: " + roundedBmi + " ,Category : " + bmiCategory);
+
         }
         else if (healthMetric == 2) {
             System.out.println("Enter required dosage in mg:");
@@ -95,12 +95,12 @@ public class HealthKiosk {
         // Task 4
         System.out.println("Enter your first name:");
         String firstName = input.nextLine();
-        char base = (char) firstName.toUpperCase().charAt(0);
+        char base = firstName.toUpperCase().charAt(0);
         System.out.println("Base code:" + base);
         char shiftedChar;
         shiftedChar = (char)('A' + (base - 'A' + 2) % 26);
         String lastTwoId = shortId.substring(3);
-        int roundedMetric = 0;
+        int roundedMetric;
         if (healthMetric == 1) {
             roundedMetric = (int) Math.round(bmi);
         } else if (healthMetric == 2) {
